@@ -28,8 +28,10 @@ Se utiliza el numero y un punto pegado y luego de un espacio el texto a enumerar
 
 #Lista con opcion de verificacion
 Se utiliza corchetes, con una x dentro para marcarl  
-[x] Este se ha terminado
-[] Esto no se ha terminado
+
+- [x] Este se ha terminado
+
+- [ ] Esto no se ha terminado
 
 #Para especificar bloques codigo  
 Se hace con `console.log('Hola mundo')` '´Codigo dentro´'
