@@ -43,9 +43,9 @@ Se ingresa cuatro espacio en blanco o 4 tab en cada linea, mas los espacios nece
 	//Terminada el codigo
 
 #Para poner enlace o imagenes
-Se pone [El texto entre corchete que aparecer] y {Y el link entre los corchetes}  
+Se pone [El texto entre corchete que aparecer] y (Y el link entre los parentesis)  
 ejem:  
-[google] {google.com}  
+[google](google.com) 
 
 #Para agregar tablas
 Se utiliza '|'
