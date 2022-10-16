@@ -46,7 +46,11 @@ Se pone [El texto entre corchete que aparecer] y {Y el link entre los corchetes}
 ejem:  
 [google] {google.com}  
 
+#Para agregar tablas
+Se utiliza '|'
 
+|Nombre|Apellido|
+|Arcelio|Montezuma|
 
 
 
