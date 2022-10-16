@@ -50,6 +50,7 @@ ejem:
 Se utiliza '|'
 
 |Nombre|Apellido|
+
 |Arcelio|Montezuma|
 
 
