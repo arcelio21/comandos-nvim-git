@@ -32,10 +32,11 @@ Se utiliza corchetes, con una x dentro para marcarl
 [] Esto no se ha terminado
 
 #Para especificar bloques codigo  
-Se hace con ´console.log('Hola mundo')´ '´Codigo dentro´'
+Se hace con `console.log('Hola mundo')` '´Codigo dentro´'
 
 ##Otra forma
 Se ingresa cuatro espacio en blanco o 4 tab en cada linea, mas los espacios necesarios para identar  
+
 	public function hello(){
 	  console.log('Hola');
 	}
