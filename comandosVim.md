@@ -1,8 +1,13 @@
-:i | para insertar
-:w | para guardar cambios
-:q | para salir
-:wq | para escribir y salir
-:esc | para cambiar al modo normal
+# Comandos utilizados y mi configuracion de comandos para Nvim
+
+|Comandos|Definicion|
+|--------|------------|
+|:i |Para entrar en el modo de insertar|
+|:w | Para guardar cambios|
+|:q | Para salir|
+|:q! | Para forzar salida sin guardar los cambios|
+|:wq | Para escribir y salir|
+|:esc | para cambiar al modo normal|
 :LspInfo | para ver configuraciones de lenguajes instalada
 F2 | PARA VER EL ARBOL DE ARCHIVO SI YA ESTA ABIERTO UN ARCHIVO
 F3 | Para abrir el arbol de archivo 
