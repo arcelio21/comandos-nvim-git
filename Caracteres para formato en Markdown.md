@@ -13,7 +13,9 @@ Se utiliza ~~2 '~' al inicio y final del texto~~
 #Para titulo
 se utuliza # dependiendo el nivel, entre mas # mas pequeña sera el titulo #nivel 1 ##nivel 2  
 #Uso de links o citas dentro del doc
-Se utiliza > Mayor y menor (signo)Entre medio del texto
+Se utiliza 
+
+> Mayor y menor (signo)Entre medio del texto
 <  
 
 #Para Listas no ordenadas  
