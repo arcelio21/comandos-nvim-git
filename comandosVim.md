@@ -1,14 +1,15 @@
 # Comandos utilizados y mi configuracion de comandos para Nvim
 
 |Comandos|Definicion|
-|--------|------------|
-|:i |Para entrar en el modo de insertar|
-|:w | Para guardar cambios|
-|:q | Para salir|
-|:q! | Para forzar salida sin guardar los cambios|
-|:wq | Para escribir y salir|
-|:esc | para cambiar al modo normal|
-:LspInfo | para ver configuraciones de lenguajes instalada
+| :--------: |------------|
+|`:i` |_Para entrar en el modo de insertar_|
+|`:w` | _Para guardar cambios_|
+|`:q` | _Para salir_|
+|`:q!` | _Para forzar salida sin guardar los cambios_|
+|`:wq` | _Para escribir y salir_|
+|`<esc>` | _Para cambiar al modo normal_|
+|*Comandos de LSP*|
+|`LspInfo` | _Para ver configuraciones de lenguajes instalada_|
 F2 | PARA VER EL ARBOL DE ARCHIVO SI YA ESTA ABIERTO UN ARCHIVO
 F3 | Para abrir el arbol de archivo 
 la | PARA VER MENU DE GENERADOR DE GET, SET, ETC
