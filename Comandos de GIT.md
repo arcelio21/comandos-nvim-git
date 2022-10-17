@@ -1,14 +1,24 @@
 # Comandos para GIT
 
+## Configuracion inicial
+
+`git config --global user.name "nombre de usuario"` _Para definir el nombre de usuario que usaremos en git_
+
+`git config --global user.email "correo electronico"` _Para definir el email que usaremos (Es recomendado utilizar el email que tenemos registrado en github)_ 
+
+`git config --global core.autocrlf true` [¿Que es core.autocrlf?](https://docs.github.com/es/get-started/getting-started-with-git/configuring-git-to-handle-line-endings#:~:text=El%20comando%20git%20config%20core,Toma%20un%20solo%20argumento.&text=En%20Windows%2C%20simplemente%20pase%20true%20a%20la%20configuraci%C3%B3n.)
+
+`git config --list` _Para ver todas las configuraciones de git_ 
+
 ## Iiniciar git en una carpeta o proyecto
 
-**Antes de hacer cualquier cosa con git, necesitara ejecutar este comando
+**Antes de hacer cualquier cosa con git, necesitara ejecutar este comando**
 
 `git init`
 
 ## Revisar estado de los archivos modificados y/o creados
 
-**Los archivos agregados al _Staging_ estara en verde, los que no, estara en rojo
+**Los archivos agregados al _Staging_ estara en verde, los que no, estara en rojo**
 
 [¿Que es Staging area y repositorio?](https://platzi.com/clases/1557-git-github/19946-que-es-el-staging-y-los-repositorios-ciclo-basico-/)
 
@@ -47,6 +57,13 @@
 ## Para moverse entre ramas
 
 `git checkout 'nombre de la rama'`
+
+## Para unir un rama a otra
+
+**Es importante que antes de hacer merge, moverse a la rama por medio del 'checkout', a  donde queremos unir la otra rama que decidiremos**
+
+`git merge 'nombre de la rama que uniremos'` _Tenemos que estar ubicado en la rama a donde se unira la otra rama_
+
 
 ## Para agregar repositorio remoto 
 
