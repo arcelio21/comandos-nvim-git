@@ -12,4 +12,17 @@
 
 `mkdir 'Nombre de carpeta' `
 
+## Ver servicios disponibles
+
+`Get-Service` _Ver servicios disponibles_
+
+`Get-Service {nombre inicial de sevicio}*` _Para buscar servicio por su nombre o iniciales_
+
+## Iniciar un servicio
+
+**Iniciar powershell como administrador para ejecutar estos comandos**
+
+`Start-Service {nombre del servicio}`
+
+
 
