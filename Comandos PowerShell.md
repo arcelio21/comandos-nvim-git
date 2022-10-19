@@ -18,9 +18,13 @@
 
 `alt + shift + tecla de direcion`
 
-## Cerrar panele
+## Cerrar paneles
 
 `ctr + shift + w`
+
+## Duplicar paneles
+
+`alt + shitf + d`
 
 ## Abrir paleta de comandos 
 
