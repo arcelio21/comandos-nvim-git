@@ -12,4 +12,9 @@
 
 `mkdir 'Nombre de carpeta' `
 
+## Para abrir paneles en la terminal
+
+`shift + {seleccionar terminal en opciones}`
+
+
 
