@@ -39,6 +39,9 @@
 |                `:h tabpage`                 | _Para ver ayua en comandos relacionados con los tab_                               |
 |                  `:tabm 0`                  | _Para ir a la primera pestaña_                                                     |
 |                   `:tabm`                   | _Para ir a la ultima pestaña_                                                      |
+| `CRTL + n` | _Cambia al siguiente buffer_|
+| `CTRL + p` | _Cambia al buffer anterior_|
+| `:bw` | _Cierra un buffer_|
 |              _Comandos de LSP_              |                                                                                    |
 |                  `LspInfo`                  | _Para ver configuraciones de lenguajes instalada_                                  |
 | _Comandos para NerdTree(Arbol de archivos)_ |
