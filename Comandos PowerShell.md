@@ -14,6 +14,18 @@
 
 `shift + {seleccionar terminal en opciones}`
 
+## Redimensionar paneles
+
+`alt + shift + tecla de direcion`
+
+## Cerrar panele
+
+`ctr + shift + w`
+
+## Abrir paleta de comandos 
+
+`ctl + shift + p`
+
 ## Ver servicios disponibles
 
 `Get-Service` _Ver servicios disponibles_
@@ -25,6 +37,5 @@
 **Iniciar powershell como administrador para ejecutar estos comandos**
 
 `Start-Service {nombre del servicio}`
-
 
 
