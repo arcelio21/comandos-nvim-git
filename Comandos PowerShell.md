@@ -42,4 +42,6 @@
 
 `Start-Service {nombre del servicio}`
 
+## Para entrar a pantalla completa 
 
+`{F11} o {fn +F11}`
