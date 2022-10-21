@@ -94,4 +94,33 @@
 
 `git pull origin 'Nombre de a rama remota'`
 
+## Crear Tags
+
+`git tag -a {nombre del tag} -m {comentario de tag}`
+
+## Ver tag descripcion de tag
+
+`git show {nombre del tag}`
+
+## Crear tag de un commit anterior
+
+`git log --oneline` _Para ver id de los commits realizados_
+
+`git tag -a {nombre del tag} {id del commit}`
+
+## Subir tags a github
+
+`git push origin {nombre del tag}`
+
+## Subir todos los tags
+
+`git push origin --tags`
+
+## Moverse entre etiquetas
+
+`git checkout {nombre de tag}`
+
+## Moverse entre etiquetas y crear rama a partir de ella
+
+`git checkout -b {nombre de nueva rama} {nombre del tag}`
 
