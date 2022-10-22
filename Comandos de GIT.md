@@ -98,9 +98,13 @@
 
 `git tag -a {nombre del tag} -m {comentario de tag}`
 
-## Eliminar tag 
+## Eliminar tag local 
 
 `git tag -d {nombre del tag}`
+
+## Eliminar tag remota 
+
+`git push origin -d {nombre de tag}`
 
 ## Ver tag descripcion de tag
 
