@@ -98,6 +98,10 @@
 
 `git tag -a {nombre del tag} -m {comentario de tag}`
 
+## Eliminar tag 
+
+`git tag -d {nombre del tag}`
+
 ## Ver tag descripcion de tag
 
 `git show {nombre del tag}`
@@ -124,3 +128,10 @@
 
 `git checkout -b {nombre de nueva rama} {nombre del tag}`
 
+## Crear un nuevo commit a partir de un anterior
+
+`git revert {numero de commit}`
+
+## Para crear un commit con otro anterior y borrar los que fueron creados despues
+
+`git reset {numero de commit}` _Para ver numero de commit consulta la seccion de log_
