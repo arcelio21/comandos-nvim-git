@@ -45,3 +45,8 @@
 ## Para entrar a pantalla completa 
 
 `{F11} o {fn +F11}`
+
+## Comando para iniciar proyecto de _RestClinica_ con spring 
+
+` & 'C:\Users\pc\.vscode\extensions\redhat.java-1.12.0-win32-x64\jre\17.0.4.1-win32-x86_64\bin\java.exe' '-XX:+ShowCodeDetailsInExceptionMessages' '@C:\Users\pc\AppData\Local\Temp\cp_6heiq38suka6qkdq14qrbyr9z.argfile' 'com.example.RestClinicaApplication'`
+
