@@ -39,9 +39,9 @@
 |                `:h tabpage`                 | _Para ver ayua en comandos relacionados con los tab_                               |
 |                  `:tabm 0`                  | _Para ir a la primera pestaña_                                                     |
 |                   `:tabm`                   | _Para ir a la ultima pestaña_                                                      |
-| `CRTL + n` | _Cambia al siguiente buffer_|
-| `CTRL + p` | _Cambia al buffer anterior_|
-| `:bw` | _Cierra un buffer_|
+|                 `CRTL + n`                  | _Cambia al siguiente buffer_                                                       |
+|                 `CTRL + p`                  | _Cambia al buffer anterior_                                                        |
+|                    `:bw`                    | _Cierra un buffer_                                                                 |
 |              _Comandos de LSP_              |                                                                                    |
 |                  `LspInfo`                  | _Para ver configuraciones de lenguajes instalada_                                  |
 | _Comandos para NerdTree(Arbol de archivos)_ |
@@ -50,6 +50,7 @@
 |    _Comandos que se pueden usar en Dev_     |
 |                    `la`                     | _Para ver generadores o un menu de opciones_                                       |
 |                    `gd`                     | _Para ir a la definicion de una clase o metodo_                                    |
+|                    `fr`                     | _Para formatear codigo_                                                            |
 |                `<space> + a`                | _Para ver donde se hace referencia a una clase o metodo(muestra una lista)_        |
 |                `<CTRL> + f`                 | _Para navegar hacia arriba en los paneles flotantes_                               |
 |                `<CTRL> + b`                 | _Para navegar hacia abajo...._                                                     |
