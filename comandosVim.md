@@ -55,3 +55,6 @@
 |                `<CTRL> + f`                 | _Para navegar hacia arriba en los paneles flotantes_                               |
 |                `<CTRL> + b`                 | _Para navegar hacia abajo...._                                                     |
 |                `<space> + o`                | _Para ver metodos de una clase_                                                    |
+|             _Comandos para FZF_             |                                                                                    |
+|                    `:Ag`                    | _Hacer busqueda de palabras dentro de un proyecto_                                 |
+|                    `:Rg`                    | _Hacer busqueda mas extrema_                                                       |
