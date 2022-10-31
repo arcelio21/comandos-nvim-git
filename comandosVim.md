@@ -27,6 +27,7 @@
 |               `:sp {archivo}`               | _Abre un panel arriba o divide paneles en horizontal_                              |
 |            `<CRTL> u {posicion}`            | _Para moverse entre paneles([posicion}: h-izquiera, l-derecha, j-abajo, k-arriba)_ |
 |          `:vsp {nombre de archivo`          | _Abre un panel a la derecha o divide paneles en vertical_                          |
+|`<CRTL> + w + {n} + < >`| _Para cambiar tamaño de paneles ,{n} cantidad de espacio a mover en numero_|
 |                `:lcd {ruta}`                | Cambia la ruta de carpeta de la linea de comandos                                  |
 |             `:windo lcd {ruta}`             | _Cambia la ruta de todos los paneles de una pestaña_                               |
 |     `:tabe {ruta o nombre de archivo}`      | Abre un archivo en una nueva pestaña                                               |
