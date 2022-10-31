@@ -50,3 +50,13 @@
 
 ` & 'C:\Users\pc\.vscode\extensions\redhat.java-1.12.0-win32-x64\jre\17.0.4.1-win32-x86_64\bin\java.exe' '-XX:+ShowCodeDetailsInExceptionMessages' '@C:\Users\pc\AppData\Local\Temp\cp_6heiq38suka6qkdq14qrbyr9z.argfile' 'com.example.RestClinicaApplication'`
 
+## Ejecutar todos los test de un proyecto (_Para ejecutar los test hay que ubicarse en la raiz del proyecto_)
+
+`mvn test`
+
+## Ejecutar todos los test de una clase de spring boot con mvn
+
+`mvn test -Dtest=nombreClase test`
+## Ejecutar test de un metodo de una clase de spring boot con maven  _Importante tener instalado maven_ 
+
+`mvn test -Dtest=nombreClase#nombreMetodo test`
