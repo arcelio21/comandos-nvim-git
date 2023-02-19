@@ -139,3 +139,5 @@
 ## Para crear un commit con otro anterior y borrar los que fueron creados despues
 
 `git reset {numero de commit}` _Para ver numero de commit consulta la seccion de log_
+
+`git checkout -- .` _Para descartar todos los cambios que no se han agregado a 'Staged' por medio de `git add ..`_
