@@ -1,33 +1,52 @@
-| Comando | Descripción |
-|---------|-------------|
-| `docker --version` | Ver la versión de Docker |
-| `docker run 'nombre_del_contenedor'` | Ejecutar un contenedor |
-| `docker run --name 'nombre_del_contenedor'` | Ejecutar un contenedor y asignarle un nombre personalizado |
-| `docker run -it 'contenedor'` | Activar el modo interactivo de Docker |
-| `docker run --name 'nombre_de_contenedor' -d ubuntu` | Iniciar un contenedor de Ubuntu y evitar que se cierre |
-| `docker run -d --name 'nombre_de_contenedor' -p numeroPuertoLocal:numeroDePuertoContenedor 'nombre_de_contenedor_online'` | Crear un contenedor que escuche un puerto local y en el contenedor |
-| `docker logs "nombre_del_contenedor"` | Ver los logs de un contenedor |
-| `docker exec -it 'nombre_de_contenedor' bash` | Ejecutar otro proceso dentro del contenedor |
-| `docker stop 'CONTAINER_ID || NAMES'` | Detener un contenedor |
-| `docker volume ls` | Ver los volúmenes creados por Docker |
-| `docker volume create 'nombre_volumen'` | Crear un volumen |
-| `docker cp 'ruta_de_archivo_o_carpeta' 'nombre_de_contenedor':'ruta_dentro_del_contenedor'` | Copiar archivos desde la PC al contenedor |
-| `docker pull 'nombre_de_la_imagen':'version_de_la_imagen'` | Descargar una imagen de Docker Hub |
-| `docker build -t 'nombre_de_la_imagen':'nombre_del_tag' 'directorio_con_dockerfile'` | Construir una imagen a partir de un archivo Dockerfile |
-| `docker login` | Iniciar sesión en Docker Hub |
-| `docker tag 'nombre_de_imagen':'tag_de_imagen' 'nombre_de_usuario_docker_hub/nombre_de_imagen':'tag_de_imagen'` | Cambiar el nombre de una imagen |
-| `docker push 'nombre_de_repositorio'` | Subir una imagen a un repositorio de Docker Hub |
-| `docker history 'nombre_de_imagen':'nombre_de_tag'` | Ver el historial de capas de una imagen |
-| `docker rename 'nombre_de_contenedor_actual' 'nuevo_nombre_de_contenedor'` | Cambiar el nombre de un contenedor |
-| `docker rm 'CONTAINER_ID || NAMES'` | Eliminar un contenedor |
-| `docker network ls` | Ver las redes de Docker creadas |
-| `docker network create --attachable nombre_red` | Crear una red en Docker |
-| `docker network inspect nombre_red` | Ver información de una red |
-| `docker network connect nombre_red nombre_contenedor` | Conectar un contenedor a una red |
-| `docker-compose up` | Ejecutar las configuraciones definidas en el archivo docker-compose.yml |
-| `docker-compose ps` | Ver los contenedores creados por Docker Compose |
-| `docker-compose logs` | Ver los logs de todos los servicios |
-| `docker-compose logs nombre_servicio` | Ver los logs de un servicio específico |
-| `docker-compose exec app bash` | Ejecutar un proceso dentro de un contenedor |
-| `docker-compose build` | Construir una imagen (en caso de ser necesario) |
-| `docker-compose down` | Eliminar todo lo creado por Docker Compose |
+| Número | Comando | Ejemplo | Descripción |
+| --- | --- | --- | --- |
+| 1 | `docker run` | `docker run -d nginx` | Ejecuta un contenedor a partir de una imagen |
+| 2 | `docker ps` | `docker ps -a` | Muestra los contenedores en ejecución |
+| 3 | `docker images` | `docker images -a` | Muestra las imágenes descargadas |
+| 4 | `docker build` | `docker build -t myimage .` | Construye una imagen a partir de un Dockerfile |
+| 5 | `docker start` | `docker start mycontainer` | Inicia un contenedor detenido |
+| 6 | `docker stop` | `docker stop mycontainer` | Detiene un contenedor en ejecución |
+| 7 | `docker rm` | `docker rm mycontainer` | Elimina un contenedor |
+| 8 | `docker rmi` | `docker rmi myimage` | Elimina una imagen |
+| 9 | `docker exec` | `docker exec -it mycontainer bash` | Ejecuta un comando en un contenedor en ejecución |
+| 10 | `docker logs` | `docker logs mycontainer` | Muestra los registros de un contenedor |
+| 11 | `docker pull` | `docker pull ubuntu` | Descarga una imagen desde un repositorio |
+| 12 | `docker push` | `docker push myimage` | Sube una imagen a un repositorio |
+| 13 | `docker network create` | `docker network create mynetwork` | Crea una red de contenedores |
+| 14 | `docker network ls` | `docker network ls` | Muestra las redes de contenedores |
+| 15 | `docker network connect` | `docker network connect mynetwork mycontainer` | Conecta un contenedor a una red |
+| 16 | `docker network disconnect` | `docker network disconnect mynetwork mycontainer` | Desconecta un contenedor de una red |
+| 17 | `docker volume create` | `docker volume create myvolume` | Crea un volumen para persistencia de datos |
+| 18 | `docker volume ls` | `docker volume ls` | Muestra los volúmenes creados |
+| 19 | `docker volume inspect` | `docker volume inspect myvolume` | Muestra información detallada de un volumen |
+| 20 | `docker volume rm` | `docker volume rm myvolume` | Elimina un volumen |
+| 21 | `docker-compose up` | `docker-compose up -d` | Levanta los servicios definidos en un archivo docker-compose.yml |
+| 22 | `docker-compose down` | `docker-compose down` | Detiene y elimina los servicios definidos en un archivo docker-compose.yml |
+| 23 | `docker-compose logs` | `docker-compose logs` | Muestra los registros de los servicios definidos en un archivo docker-compose.yml |
+| 24 | `docker-compose build` | `docker-compose build` | Construye las imágenes definidas en un archivo docker-compose.yml |
+| 25 | `docker-compose exec` | `docker-compose exec service_name command` | Ejecuta un comando en un servicio definido en un archivo docker-compose.yml |
+| 26 | `docker inspect` | `docker inspect mycontainer` | Muestra información detallada de un contenedor |
+| 27 | `docker rename` | `docker rename mycontainer newname` | Cambia el nombre de un contenedor |
+| 28 | `docker update` | `docker update --cpus 2 mycontainer` | Actualiza la configuración de un contenedor en ejecución |
+| 29 | `docker attach` | `docker attach mycontainer` | Adjunta una sesión al terminal de un contenedor en ejecución |
+| 30 | `docker cp` | `docker cp file.txt mycontainer:/path/file.txt` | Copia archivos entre el host y un contenedor |
+| 31 | `docker save` | `docker save -o myimage.tar myimage` | Guarda una imagen en un archivo tar |
+| 32 | `docker load` | `docker load -i myimage.tar` | Carga una imagen desde un archivo tar |
+| 33 | `docker export` | `docker export mycontainer > mycontainer.tar` | Exporta el sistema de archivos de un contenedor a un archivo tar |
+| 34 | `docker import` | `docker import mycontainer.tar myimage` | Importa un sistema de archivos de un archivo tar como una nueva imagen |
+| 35 | `docker top` | `docker top mycontainer` | Muestra los procesos en ejecución en un contenedor |
+| 36 | `docker stats` | `docker stats` | Muestra las estadísticas de uso de recursos de los contenedores |
+| 37 | `docker prune` | `docker prune` | Elimina los recursos no utilizados, como contenedores, imágenes y volúmenes |
+| 38 | `docker version` | `docker version` | Muestra la versión de Docker instalada |
+| 39 | `docker info` | `docker info` | Muestra información sobre la configuración de Docker y el sistema |
+| 40 | `docker login` | `docker login -u username -p password` | Inicia sesión en un registro de Docker |
+| 41 | `docker logout` | `docker logout` | Cierra la sesión en un registro de Docker |
+| 42 | `docker attach` | `docker attach mycontainer` | Adjunta una sesión al terminal de un contenedor en ejecución |
+| 43 | `docker pause` | `docker pause mycontainer` | Pausa la ejecución de un contenedor |
+| 44 | `docker unpause` | `docker unpause mycontainer` | Reanuda la ejecución de un contenedor pausado |
+| 45 | `docker kill` | `docker kill mycontainer` | Detiene abruptamente un contenedor en ejecución |
+| 46 | `docker restart` | `docker restart mycontainer` | Reinicia un contenedor en ejecución |
+| 47 | `docker logs` | `docker logs mycontainer --tail 100` | Muestra los últimos 100 registros de un contenedor |
+| 48 | `docker history` | `docker history myimage` | Muestra el historial de capas de una imagen |
+| 49 | `docker commit` | `docker commit mycontainer myimage` | Crea una nueva imagen a partir de los cambios realizados en un contenedor |
+| 50 | `docker search` | `docker search mysql` | Busca una imagen en el registro de Docker |
