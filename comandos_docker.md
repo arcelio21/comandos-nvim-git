@@ -1,6 +1,15 @@
 | Número | Comando | Ejemplo | Descripción |
 | --- | --- | --- | --- |
 | 1 | `docker run` | `docker run -d nginx` | Ejecuta un contenedor a partir de una imagen |
+| 1.2 | `docker run` | `docker run -d myimage` | Ejecuta un contenedor en segundo plano |
+| 1.3 | `docker run` | `docker run -it myimage` | Proporciona una interfaz interactiva con el contenedor |
+| 1.4 | `docker run` | `docker run -p 8080:80 myimage` | Publica el puerto 80 del contenedor en el puerto 8080 del host |
+| 1.5 | `docker run` | `docker run --name mycontainer myimage` | Asigna un nombre al contenedor |
+| 1.6 | `docker run` | `docker run --rm myimage` | Elimina automáticamente el contenedor después de su ejecución |
+| 1.7 | `docker run` | `docker run -e VAR=value myimage` | Establece una variable de entorno dentro del contenedor |
+| 1.8 | `docker run` | `docker run -v /host/path:/container/path myimage` | Monta un volumen o ruta del host en el contenedor |
+| 1.9 | `docker run` | `docker run --network mynetwork myimage` | Conecta el contenedor a una red específica |
+| 1.10 | `docker run` | `docker run --link mycontainer:alias myimage` | Conecta el contenedor a otro contenedor y le asigna un alias |
 | 2 | `docker ps` | `docker ps -a` | Muestra los contenedores en ejecución |
 | 3 | `docker images` | `docker images -a` | Muestra las imágenes descargadas |
 | 4 | `docker build` | `docker build -t myimage .` | Construye una imagen a partir de un Dockerfile |
@@ -50,3 +59,14 @@
 | 48 | `docker history` | `docker history myimage` | Muestra el historial de capas de una imagen |
 | 49 | `docker commit` | `docker commit mycontainer myimage` | Crea una nueva imagen a partir de los cambios realizados en un contenedor |
 | 50 | `docker search` | `docker search mysql` | Busca una imagen en el registro de Docker |
+| 51 | `docker system` | `docker system df` | Muestra el uso de espacio en disco de Docker |
+| 52 | `docker system prune` | `docker system prune` | Limpia los recursos no utilizados, incluyendo contenedores, imágenes y volúmenes |
+| 53 | `docker plugin` | `docker plugin install myplugin` | Administra complementos de Docker |
+| 54 | `docker service` | `docker service create --replicas 3 myservice` | Administra servicios en Docker Swarm |
+| 55 | `docker stack` | `docker stack deploy -c docker-compose.yml mystack` | Administra pilas de servicios en Docker Swarm |
+| 56 | `docker swarm` | `docker swarm init` | Administra y configura un clúster de Docker Swarm |
+| 57 | `docker node` | `docker node ls` | Administra nodos en Docker Swarm |
+| 58 | `docker secret` | `docker secret create mysecret secret.txt` | Administra secretos en Docker Swarm |
+| 59 | `docker config` | `docker config create myconfig config.txt` | Administra configuraciones en Docker Swarm |
+| 60 | `docker network inspect` | `docker network inspect mynetwork` | Muestra información detallada de una red de contenedores |
+
